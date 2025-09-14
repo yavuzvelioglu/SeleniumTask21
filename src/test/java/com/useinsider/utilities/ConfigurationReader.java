@@ -20,7 +20,7 @@ public class ConfigurationReader {
       }
    }
 
-   // how can we call the ConfigurationReader
+   // that is how we can call the ConfigurationReader
    public static String get(String keyName){
       return properties.getProperty(keyName);
    }

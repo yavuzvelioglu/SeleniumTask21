@@ -25,13 +25,13 @@ public class Driver {
                     driver = new ChromeDriver();
                     break;
                 case "chrome-headless":
-                    driver = new ChromeDriver(new ChromeOptions().addArguments("--headless=new"));
+                    driver = new ChromeDriver(new ChromeOptions().addArguments("--headless=new"));  //"see 'blog/2023/headless-is-going-away' article on 'selenium.dev' website"
                     break;
                 case "firefox":
                     driver = new FirefoxDriver();
                     break;
                 case "firefox-headless":
-                    driver = new FirefoxDriver(new FirefoxOptions().addArguments("--headless=new"));
+                    driver = new FirefoxDriver(new FirefoxOptions().addArguments("--headless=new"));  //"see 'blog/2023/headless-is-going-away' article on 'selenium.dev' website"
                     break;
                 case "ie":
                     if (!System.getProperty("os.name").toLowerCase().contains("windows"))
